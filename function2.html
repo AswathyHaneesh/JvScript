@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Functions</h1>
+<p>Correct Code</p>
+<p id="demo"></p>
+<p id ="demo1"></p>
+<p id ="demo2"></p>
+
+
+<script>
+function toCelsius(f) 
+{
+  return (5/9) * (f-32);
+}
+let value = toCelsius(77);
+document.getElementById("demo").innerHTML = value;
+
+// Incorrect code
+function toCelsius(f)
+{
+    return(5/9) * (f-32);
+}
+let value1 = toCelsius();
+document.getElementById("demo1").innerHTML = value1;
+
+
+// Incorrect code
+function toCelsius(f)
+{
+    return(5/9) * (f-32);
+}
+let value2 = toCelsius;
+document.getElementById("demo2").innerHTML = value1;
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>The onload Event</h2>
+
+<iframe id="myFrame" src="C:\Users\DAS\Desktop\new\Javascript\onload.html"></iframe>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("myFrame").onload = function() {myFunction()};
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Iframe is loaded.";
+}
+</script>
+
+</body>
+</html>

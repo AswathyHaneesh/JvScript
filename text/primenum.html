@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Even Numbers</title>
+    </head>
+    <body>
+        <h1>Prime Numbers</h1>
+
+        <script>
+           for (var counter = 0; counter <= 100; counter++) 
+           {
+
+           var notPrime = false;
+           for (var i = 2; i <= counter; i++) 
+           {
+           if (counter%i===0 && i!==counter)
+           {
+           notPrime = true;
+           }
+           }
+          if (notPrime === false) 
+          {
+            console.log(counter);
+            document.write("<br>"+counter);
+          }
+          }
+        </script>
+    </body>
+</html>

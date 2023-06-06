@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Testing
+        </title>
+        <style>
+            .button{
+                position: absolute;
+                background-color: darkgreen;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .center{
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                height: fit-content;
+                border: 2px solid green;
+
+            }
+
+        </style>
+
+
+    <body>
+        <button type="button" class="button" id="bdemo">ClickMe</button>
+        <div>
+            <p class="center" id="pdemo">Click the button to change color</p>
+        </div>
+
+        <button type="button" class="button" id="bbdemo">ClickMe</button>
+        <div>
+            <p class="center" id="ppdemo">Click the button to change the text to today date</p>
+        </div>
+
+        <button id="bbbdemo" type="button" class="button">ClickMe</button>
+        <div>
+            <p id="pppdemo" class="center" >Click the button to hide content</p>
+        </div>
+
+        <button type="button" id="bbbbdemo" class="button" onclick="window.print()">Print</button>
+        <div>
+            <p id="ppppdemo" class="center">TO take the print of window</p>
+        </div>
+    </body>
+
+
+
+     <script>
+        document.getElementById("bdemo").onclick = function() {
+            document.getElementById("pdemo").style.color = 'red';
+        }
+
+        document.getElementById("bbdemo").onclick = function() {
+            document.getElementById("ppdemo").innerHTML = Date();
+
+        }
+
+        document.getElementById("bbbdemo").onclick = function() {
+            document.getElementById("pppdemo").style.display = 'none';
+        }
+
+
+
+
+     </script>
+    </head>
+</html>

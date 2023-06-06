@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document.write</title>
+        <style>
+            .button{
+                position: absolute;
+                top:50%;
+                background-color: chocolate;
+
+            }
+        </style>
+    </head>
+    <body>
+        <h3>
+            Using document.write() after an HTML document is loaded, will delete all existing HTML:
+        </h3>
+        <p>My Paragraph...</p>
+        <div>
+            <button type="button" class="button"  onclick="document.write(5+6)">Use Me</button>
+            <button type="button" class="button" onclick="document.write('5+6')">Show Me</button>
+            <button type="button" class="button" onclick="document.write('Aswathy')">See</button>
+        </div>
+       
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Searching
+        </title>
+        <style>
+            .center{
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                border: 2px solid green;
+                height: fit-content;
+            }
+
+        </style>
+    </head>
+    <body>
+        <p>The position of first occurance of "locate" is:</p>
+        <div>
+            <p class="center" id="pdemo"></p>
+        </div>
+
+        <p>The position of last occurance of "locate" is:</p>
+        <div>
+            <p class="center" id="ppdemo"></p>
+        </div>
+
+        <p>Return the position of the first occurrence of a regular expression:</p>
+        <div>
+            <p class="center" id="pppdemo"></p>
+        </div>
+
+        <!--<p>Perform a search for Spain </p>
+        <div>
+            <p id="ppppdemo" class="center"></p>
+        </div>
+        -->
+
+    </body>
+    <script>
+        let text1 = "Please locate where 'locate' occurs!";
+        let index1 = text1.indexOf("locate");
+        document.getElementById("pdemo").innerHTML = index1;
+
+        let text2= "Please locate where 'locate' occurs!";
+        let index2 = text2.lastIndexOf("locate");
+        document.getElementById("ppdemo").innerHTML = index2;
+
+        let text3 = "Please locate where 'locate' occurs!";
+        let search1 = text3.search(/locate/);
+        document.getElementById("pppdemo").innerHTML = search1;
+
+        //let text4= "The rain in Spain stays mainly in the plain";
+        //const myArry = text4.match("in");
+       // document.getElementById("ppppdemo").innerHTML = myArry.length + " " + myArry;
+
+
+    </script>
+
+</html>

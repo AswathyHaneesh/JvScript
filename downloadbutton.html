@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Download</title>
+    <style>
+        .button
+        {
+            display: inline-flex;
+            height: 50px;
+            padding: 0;
+            background: royalblue;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            overflow: hidden;
+            font-family:'Quicksand', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        .button:hover
+        {
+            background: blue;
+        }
+        .button:active
+        {
+            background: blueviolet;
+        }
+        .button__icon,button__text
+        {
+            display: inline-flex;
+            align-items: center;
+            padding: 0 24px;
+            color: white;
+            height: 100%;
+        }
+        .button__icon
+        {
+            font-size: 1.5em;
+            background: rgba(0,0, 0, 0.08);
+        }
+    </style>
+
+</head>
+<body>
+    <button type="button" class="button">
+        <span class="button__text">Download</span>
+        <span class="button__icon">
+            <ion-icon name="cloud-download-sharp"></ion-icon>
+        </span>
+
+    </button>
+
+
+
+    <!--Script-->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
+
+
+
+

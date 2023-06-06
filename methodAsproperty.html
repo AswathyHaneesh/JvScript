@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+// Create an object:
+const person = 
+{
+  firstName: "Aswathy",
+  lastName: "Haneesh",
+  age: 30,
+  eyeColor: "red",
+  fullName : function() 
+  {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+// Display some data from the object:
+document.getElementById("demo").innerHTML =
+person.firstName + " " +  person.lastName +  " is " + person.age + " years old.";
+
+// object access Fullname
+document.getElementById("demo1").innerHTML = 
+person.fullName() + " is " + person["age"] + "years old.";
+</script>
+
+</body>
+</html>

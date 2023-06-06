@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Download</title>
+    <style>
+       .button
+       {
+        background: black;
+        color: green;
+        border-radius: 5px;
+        padding: 0, 25px;
+        font-size: large;
+        align-content: center;
+       }
+
+       .center
+       {
+        align-items: center;
+        height: 200px;
+        border: 3px solid green;
+        justify-content: center;
+        display: flex;
+       }
+       .button
+       {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        color: chocolate;
+       }
+    </style>
+
+</head>
+<body>
+    <div>
+        <button type="button" class="button" id="do something" onclick="dosomething()">Click Me</button>
+    </div>
+
+    <div class="center">
+        <p id="do">Hello</p>
+      </div>
+      
+
+    <!--Script-->
+    <script>
+         function dosomething()
+        {
+            document.getElementById("do").innerHTML = Date();
+        }
+    </script>
+
+</body>
+</html>
+
+
+
+
